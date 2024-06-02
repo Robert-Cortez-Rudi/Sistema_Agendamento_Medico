@@ -29,7 +29,17 @@ O Sistema de Agendamento Médico é uma aplicação completa que permite gerenci
    pip install -r requirements.txt
 ```
 
-3. Execute o arquivo main.py para iniciar o sistema:
+3. Altere algumas configurações no arquivo config.py para acessar ao banco de dados de sua preferência e não apresentar problemas ao executar o arquivo main.py:
+```bash
+# config.py
+user = "postgres" # usuario do sistema PostgreSQL
+password = "senha" # incluir a senha do seu banco de dados
+host = "localhost"
+database = "Consultas_medicas" # nome do banco de dados
+```
+
+
+4. Execute o arquivo main.py para iniciar o sistema:
 ```bash
   python main.py
 ```
